@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Nitin Sharma's personal laptop support fundraiser. Goal ₹23,000.">
+<title>Help Nitin Take the Next Step</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--bg:#f6f8fb;--card:#fff;--line:#e5e9f0;--blue:#2563eb;--green:#16a34a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+.container{width:min(1050px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-weight:900}.links{display:flex;gap:18px}.links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:700}
+.hero{padding:70px 0 50px;background:linear-gradient(135deg,#eef5ff,#fff)}
+.tag{display:inline-block;background:#e8f0ff;color:#1d4ed8;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:800}
+h1{font-size:clamp(38px,7vw,66px);line-height:1.05;letter-spacing:-2px;margin:18px 0 14px}
+h2{font-size:30px;line-height:1.2;margin:0 0 16px}.lead{font-size:19px;color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;margin:28px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 8px 28px rgba(16,24,40,.05)}
+.amount{font-size:30px;font-weight:850}.muted{color:var(--muted);font-size:14px}
+.bar{height:15px;background:#e9edf3;border-radius:999px;overflow:hidden;margin:15px 0 8px}.fill{height:100%;background:var(--blue);width:0;transition:width .4s}
+.row{display:flex;justify-content:space-between;font-size:14px;font-weight:750}
+.btn{display:block;text-align:center;text-decoration:none;border-radius:13px;padding:13px 16px;margin:10px 0;font-weight:800;border:1px solid var(--line);color:var(--ink);background:#fff}
+.blue{background:var(--blue);color:#fff;border-color:var(--blue)}.green{background:var(--green);color:#fff;border-color:var(--green)}
+.story p{margin:0 0 17px}.purpose{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:24px}
+.purpose div{padding:17px;background:#f8fafc;border:1px solid var(--line);border-radius:15px}
+.paygrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.qr{width:100%;max-width:290px;display:block;margin:14px auto;border-radius:14px;border:1px solid var(--line)}
+.id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#f2f4f7;padding:9px 11px;border-radius:999px;word-break:break-all}
+.note{padding:14px 16px;border-left:4px solid var(--blue);background:#f8fafc;border-radius:8px;color:#475467}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:12px 9px;border-bottom:1px solid var(--line)}th{font-size:12px;text-transform:uppercase;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:35px 0 55px;font-size:14px}
+@media(max-width:760px){.grid,.paygrid{grid-template-columns:1fr}.purpose{grid-template-columns:1fr}.links{gap:10px}.links a{font-size:12px}.hero{padding:48px 0 38px}.card{padding:22px}table{display:block;overflow-x:auto;white-space:nowrap}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><div class="logo">Nitin Sharma</div><div class="links"><a href="#home">Home</a><a href="#story">My Story</a><a href="#support">Support</a><a href="#history">History</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="home"><div class="container">
+<span class="tag">PERSONAL LAPTOP SUPPORT</span>
+<h1>Help Me Take the Next Step</h1>
+<p class="lead">I’m raising <strong>₹23,000</strong> for a basic laptop that can help me start freelancing, apply for work-from-home opportunities, continue my studies, and work toward financial independence.</p>
+<a class="btn blue" href="#support" style="display:inline-block;padding-left:24px;padding-right:24px">Support My Goal</a>
+</div></header>
+
+<main class="container">
+<div class="grid">
+<section class="card">
+<h2>₹23,000 Laptop Goal</h2>
+<div class="amount" id="raised">₹0 <span class="muted">raised of ₹23,000</span></div>
+<div class="bar"><div class="fill" id="progress"></div></div>
+<div class="row"><span id="percent">0% funded</span><span>Goal: ₹23,000</span></div>
+<p class="muted">Every voluntary contribution can bring me closer to having the equipment I need to start earning.</p>
+</section>
+<section class="card" id="support">
+<h2>Support Me</h2>
+<p class="muted">Choose PayPal for international support or UPI for Indian payments.</p>
+<a class="btn blue" href="https://paypal.me/NitinSharma298" target="_blank" rel="noopener">Donate via PayPal</a>
+<a class="btn green" href="#payments">Donate via UPI</a>
+</section>
+</div>
+
+<section class="card story" id="story">
+<h2>My Story</h2>
+<p>My name is Nitin Sharma, and I’m an individual in India trying to build a path toward financial independence.</p>
+<p>My family is currently going through financial difficulties. My parents already have pending loans and other financial responsibilities, so they are not in a position to afford a laptop for me, and I don't want to put any additional burden on them. I also cannot take a loan myself, and unfortunately, my relatives are not able to help me with the cost either.</p>
+<p>I’ve tried to find opportunities to earn money, including freelancing and work-from-home and work-from-office jobs. I have applied for different opportunities, and in so many cases, my skills and resume were suitable. I even cleared assessments and interviews, but not having the necessary equipment became a major obstacle.</p>
+<p>Right now, a reliable laptop is one of the biggest things I need. With a laptop, I would be able to start freelancing, apply for jobs, continue my studies, develop my skills, and work toward becoming financially independent. More importantly, I want to eventually support my education and help my family with our financial situation.</p>
+<p>My goal is to raise ₹23,000 for a basic laptop that I can use for work, freelancing, learning, studying, and building my career. My goal isn't simply to buy a device—it is to have a practical tool that can give me an opportunity to start earning.</p>
+<p>If you are able and genuinely willing to help, even ₹50 or ₹200 would mean a lot to me. ₹50–₹200 may seem like a small amount to many people, but when many people contribute a small amount, it can make a very big difference for someone in my situation.</p>
+<p>I'm not asking anyone to give more than they can afford. If you genuinely want to support me, any voluntary contribution would bring me one step closer to getting the laptop I need to start working.</p>
+<p>Thank you for taking the time to read my story and for considering helping me. Even a small contribution could help me take an important step toward becoming financially independent.</p>
+<div class="purpose">
+<div><strong>💻 Laptop</strong><br>Basic equipment for work and freelancing.</div>
+<div><strong>📚 Learning</strong><br>Studies, skill development and career preparation.</div>
+<div><strong>💼 Work</strong><br>Freelancing and work-from-home opportunities.</div>
+</div>
+</section>
+
+<section class="card" id="payments" style="margin-top:24px">
+<h2>Payment Options</h2>
+<div class="paygrid">
+<div>
+<h3>PayPal</h3><p class="muted">For international support</p>
+<a class="btn blue" href="https://paypal.me/NitinSharma298" target="_blank" rel="noopener">Open PayPal</a>
+</div>
+<div>
+<h3>Google Pay / UPI</h3><p class="muted">UPI ID: <span class="id">ns5782136@okaxis</span></p>
+<img class="qr" src="gpay_qr.png" alt="Google Pay UPI QR code">
+<a class="btn green" href="upi://pay?pa=ns5782136@okaxis">Open UPI Payment</a>
+</div>
+<div>
+<h3>Navi / UPI</h3><p class="muted">UPI ID: <span class="id">ns5782136@naviaxis</span></p>
+<img class="qr" src="navi_qr.png" alt="Navi UPI QR code">
+<a class="btn green" href="upi://pay?pa=ns5782136@naviaxis">Open UPI Payment</a>
+</div>
+</div>
+<p class="note"><strong>How this works:</strong> You can donate directly through PayPal or UPI. Donors do not need to fill out a form on this website. I will manually verify received donations and update the public information and progress on the website.</p>
+</section>
+
+<section class="card" id="history" style="margin-top:24px">
+<h2>Donation History</h2>
+<p class="muted">Donation information is added manually after the payment has been received and verified.</p>
+<div style="overflow-x:auto">
+<table><thead><tr><th>Date</th><th>Name</th><th>Country / State</th><th>Amount</th><th>Message / Comment</th></tr></thead>
+<tbody id="historyBody"><tr><td>—</td><td>No donations yet</td><td>—</td><td>₹0</td><td>—</td></tr></tbody></table>
+</div>
+</section>
+
+<section class="card" id="contact" style="margin-top:24px">
+<h2>Contact Me</h2>
+<p>If you have any questions about the fundraiser or need to contact me regarding a donation, you can reach me at:</p>
+<p><strong>Email: ns5782136@gmail.com</strong></p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a class="btn blue" href="mailto:ns5782136@gmail.com" style="flex:1;min-width:180px;">Email Me</a>
+<a class="btn blue" href="https://www.linkedin.com/in/nitin-sharma-48644a3a5" target="_blank" rel="noopener" style="flex:1;min-width:180px;">Connect on LinkedIn</a>
+</div>
+</section>
+
+<section class="card" style="margin-top:24px">
+<h2>Transparency</h2>
+<p>I am an individual seeking voluntary financial support, not a registered charity or NGO. The fundraising goal is ₹23,000, intended for a basic laptop for work, freelancing, learning and studies.</p>
+<p class="muted">Please contribute only if you genuinely want to and can afford to.</p>
+</section>
+<section class="card" style="margin-top:24px">
+<h2>📌 Note</h2>
+<p>If you have already made a donation but the progress bar or Donation History has not been updated yet, please don't worry. Donations are manually verified and updated. Please allow up to <strong>24 hours</strong> for the website to be updated.</p>
+</section>
+</main>
+
+<footer>© 2026 Nitin Sharma • Personal Laptop Support</footer>
+<script>
+const raisedAmount = 0;
+const goalAmount = 23000;
+const donations = [];
+
+const pct = Math.min(100, (raisedAmount / goalAmount) * 100);
+document.getElementById("raised").innerHTML =
+"₹" + raisedAmount.toLocaleString("en-IN") +
+' <span class="muted">raised of ₹23,000</span>';
+document.getElementById("progress").style.width = pct + "%";
+document.getElementById("percent").textContent = pct.toFixed(2).replace(/\.00$/,"") + "% funded";
+
+const body = document.getElementById("historyBody");
+if (donations.length) {
+body.innerHTML = donations.map(d => `
+<tr>
+<td>${d.date}</td>
+<td>${d.name}</td>
+<td>${d.location}</td>
+<td>₹${Number(d.amount).toLocaleString("en-IN")}</td>
+<td>${d.message || "—"}</td>
+</tr>`).join("");
+}
+</script>
+</body>
+</html>
