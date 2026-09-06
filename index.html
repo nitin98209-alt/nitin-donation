@@ -131,8 +131,15 @@ footer{text-align:center;color:var(--muted);padding:35px 0 55px;font-size:14px}
 
 <footer>© 2026 Nitin Sharma • Personal Laptop Support</footer>
 <!-- Free visitor counter: replace YOURCODE with your GoatCounter site code. -->
+<!-- GoatCounter Analytics & Visitor Counter -->
 <script data-goatcounter="https://supportnitin.goatcounter.com/count"
-        async src="https://gc.zgo.at/count.js"></script>
+        async src="//gc.zgo.at/count.js"></script>
+
+<!-- HTML element to display the visitor count -->
+<div style="text-align:center; margin: 15px 0; font-size: 14px; color: var(--muted);">
+  Total Visitors: <span id="visitorCount">Loading...</span>
+</div>
+
 <script>
 (function () {
   let attempts = 0;
@@ -154,6 +161,7 @@ footer{text-align:center;color:var(--muted);padding:35px 0 55px;font-size:14px}
   }, 100);
 })();
 </script>
+        
 
 <script>
 const raisedAmount = 0;
